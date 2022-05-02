@@ -10,57 +10,56 @@ and open the template in the editor.
 
 body /*Propriétés pour le body (Toute la page affichée)*/ 
 { 
-    width           : auto;             /*La largeur de l'élément réglée automatiquement*/
-    margin          : auto;             /*La marge de l'élément réglée automatiquement*/
-    padding         : 0px;              /*écart de remplissage sur les cotés en pixels*/
-    margin-left     : 20%;              /*La marge à gauche de l'élement en pourcents*/
-    margin-right    : 20%;             /*La marge à droite de l'élement en pourcents*/
+    width: auto;
+    margin: auto;
+    padding: 0px;
+    margin-left: 20%;
+    margin-right: 20%;
     background-color: azure;
 }
 
 #menu /*Propriétés pour le menu*/
 {
     float: left;
-    width: auto;                 /*Largeur réglé automatiquement*/
-    height: auto;                /*Hauteur réglé automatiquement*/
-    background-color: blue;      /*Definition de la couleur de fond*/
+    width: auto;
+    height: auto;
+    background-color: blue;
 }
 
 #Corps /*Propriétés du corps*/
 {
-    width       :auto;      /*Largeur réglé automatiquement*/
-    height      :auto;      /*Hauteur réglé automatiquement*/
+    width:auto;
+    height:auto;
 }
 
 
 #menu ul li /*Propriétés de la liste du menu*/
 { 
-    float : left;
-    margin-left : 5px;
+    float: left;
+    margin-left: 5px;
     padding-left: 5px;
-    margin-right : 5px;
+    margin-right: 5px;
     padding-right: 5px;
     list-style:none;   
 }
 
-section
+section /*Propriétés de la section*/
 {
     display: flex;
     flex-direction: column;
 }
 
-section div {
+section div { /* Propriété des divisions dans la section*/
     margin-top: 10px;
     margin-bottom: 10px
 }
 
-td {
+td { /*Propriété des balises td*/
     justify-content: center
 }
 
 #image  /*Propriétés des images*/
 {
-    /*float: left;*/
     border: 2px black groove;
     border-radius: 10px;
 }
@@ -85,14 +84,13 @@ h2  /*Propriétés du titre de la page*/
     background-color: #99ccff;
 }
 
-td h3, td p
+td h3, td p /*Propriétés des textes niveau h3 et des paragraphes contenus dans une balise td*/
 {
-    /*display: block;*/
     margin-left: 60px;
     text-align: left;
 }
 
-h3     /*Propriétés des titres des catégories*/
+h3 /*Propriétés des titres des catégories*/
 {
     display: inline-block;
     margin-block: 2px;
@@ -105,7 +103,7 @@ h3     /*Propriétés des titres des catégories*/
     
 }
 
-h3::after /*Propriétés pour souligner au passage de la souris les titres avec un lien*/
+h3::after /*Propriétés pour souligner au passage de la souris les titres ayant un lien*/
 {
     content: '';
     width: 100%;
@@ -120,10 +118,9 @@ h3::after /*Propriétés pour souligner au passage de la souris les titres avec 
     transition: transform .25s ease;
 }
 
-h3:hover::after /*Propriétés pour souligner au passage de la souris les titres avec un lien*/
+h3:hover::after /*Propriétés pour souligner au passage de la souris les titres ayant un lien*/
 {
     transform: scaleX(1);
-    
 }
 
 #pied-de-page /*propriétés du pied de page*/
